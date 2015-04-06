@@ -46,6 +46,7 @@ for element in root.findall('.//element'):
 #Convert signals
 for element in root.findall('.//signal'):
     translateNodeChildren(element, 'wire', [('x1', args.x), ('y1', args.y), ('x2', args.x), ('y2', args.y)])
+    translateNodeChildren(element, 'via', [('x', args.x), ('y', args.y)])
 
 
 #write result back
