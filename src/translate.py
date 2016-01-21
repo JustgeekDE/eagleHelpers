@@ -21,7 +21,7 @@ def translateNodeChildren(node, childSelector, attributes):
             translateNodeValue(child, attributeName, attributeTranslation)
 
 
-parser = argparse.ArgumentParser(description='Profile xcode build run')
+parser = argparse.ArgumentParser(description='Moves everything in an EAGLE board file by the specified distance')
 parser.add_argument('-i', dest='inputName', action='store', help='input file name', default='input.brd')
 parser.add_argument('-o', dest='outputName', action='store', help='output file name', default='output.brd')
 parser.add_argument('-x', dest='x', action='store', help='translation in x direction', default=0, type=float)
